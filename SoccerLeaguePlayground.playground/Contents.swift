@@ -29,7 +29,7 @@ var inexperiencedPlayers : [[String : String]] = []
 
 func sortPlayersByExperience(arrayOfPlayers: [[String : String]]) {
     
-    for player: [String : String] in allPlayersArray {
+    for player: [String : String] in arrayOfPlayers {
         if let experienceString : String = player["Experience"] {
             if (experienceString == "true") {
                 experiencedPlayers.append(player)
